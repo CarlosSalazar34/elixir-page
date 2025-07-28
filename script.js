@@ -5,13 +5,3 @@ document.querySelector("form").addEventListener("submit", (e) => {
     e.target.reset();
         });
 
-
-
-const response = await fetch("localhost:8000", {
-    method: "POST",
-    body: JSON.stringify({"name": "Carlos", "edad": 12})
-})
-
-result = await response.json()
-
-print(result)
